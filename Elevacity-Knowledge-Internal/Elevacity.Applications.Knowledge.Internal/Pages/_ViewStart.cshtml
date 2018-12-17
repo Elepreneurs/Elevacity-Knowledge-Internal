@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Elevacity.UI.Internal.Areas.Identity.Data;
+
+@inject SignInManager<ElevacityInternalUser> SignInManager
+@inject UserManager<ElevacityInternalUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    Layout = "_LayoutTheme";
+}
+else
+{
+
+    Layout = "_LayoutPublic";
+}
+
+

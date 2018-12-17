@@ -1,0 +1,136 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@*<div class="page-header page-header-light">
+    <div class="page-header-content header-elements-md-inline">
+        <div class="page-title d-flex">
+            <h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> - Dashboard</h4>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+        <div class="header-elements d-none">
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-link btn-float font-size-sm font-weight-semibold text-default">
+                    <i class="icon-bars-alt text-pink-300"></i>
+                    <span>Statistics</span>
+                </a>
+                <a href="#" class="btn btn-link btn-float font-size-sm font-weight-semibold text-default">
+                    <i class="icon-calculator text-pink-300"></i>
+                    <span>Invoices</span>
+                </a>
+                <a href="#" class="btn btn-link btn-float font-size-sm font-weight-semibold text-default">
+                    <i class="icon-calendar5 text-pink-300"></i>
+                    <span>Schedule</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+        <div class="d-flex">
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+                <span class="breadcrumb-item active">Dashboard</span>
+            </div>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+        <div class="header-elements d-none">
+            <div class="breadcrumb justify-content-center">
+                <a href="#" class="breadcrumb-elements-item">
+                    <i class="icon-comment-discussion mr-2"></i>
+                    Support
+                </a>
+                <div class="breadcrumb-elements-item dropdown p-0">
+                    <a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear mr-2"></i>
+                        Settings
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+                        <a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+                        <a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<div class="page-header page-header-light border-bottom-2 border-bottom-teal">
+    @*<div class="page-header-content border-bottom-2 border-bottom-danger border-bottom-teal-700">
+        <div class="page-title">
+            <h5>
+                <i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Page</span> - Header
+                <small class="d-block text-muted">Large <code>bottom</code> border with custom color</small>
+            </h5>
+        </div>
+        <div class="header-elements">
+            <div class="btn-group">
+                <button class="btn bg-indigo-400 legitRipple">Button<div class="legitRipple-ripple" style="left: 95.2175%; top: 23.3392%; transform: translate3d(-50%, -50%, 0px); width: 218.708%; opacity: 0;"></div></button>
+
+                <button class="btn bg-indigo-400 dropdown-toggle legitRipple legitRipple-empty" data-toggle="dropdown" aria-expanded="false"></button>
+                <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(127px, 38px, 0px);">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Another action</a>
+                    <a href="#" class="dropdown-item">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">One more line</a>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+    <div class="page-header-content header-elements-md-inline border-bottom-2 border-bottom-danger border-bottom-teal-700">
+        <div class="page-title d-flex">
+            <h5>
+                <i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold text-uppercase">@ViewData["Title"]</span> @if (ViewData["SubTitle"] != null && !string.IsNullOrEmpty(ViewData["SubTitle"].ToString())) { <span class="text-lowercase">- @ViewData["SubTitle"]</span> }
+                @if (ViewData["Description"] != null && !string.IsNullOrEmpty(ViewData["Description"].ToString()))
+                {
+                    <small class="d-block text-muted">@ViewData["Description"]</small>
+                }
+
+
+            </h5>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+
+        @*<div class="header-elements d-none text-center text-md-left">
+            <button type="button" class="btn btn-info daterange-ranges dropdown-toggle legitRipple">
+                <i class="icon-calendar5 mr-2"></i>
+                <span>Aug 8, 2018 - Jul 10, 2018</span>
+                <div class="legitRipple-ripple" style="left: 61.0222%; top: 31.0667%; transform: translate3d(-50%, -50%, 0px); width: 202.361%; opacity: 0;"></div><div class="legitRipple-ripple" style="left: 44.9645%; top: 57.7822%; transform: translate3d(-50%, -50%, 0px); width: 202.361%; opacity: 0;"></div>
+            </button>
+        </div>*@
+    </div>
+
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+        <div class="d-flex">
+            <div class="breadcrumb">
+                <a asp-page="~/Index" class="breadcrumb-item"><i class="material-icons">home</i> Home</a>
+
+                @*<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+                <a href="components_page_header.html" class="breadcrumb-item">Current</a>
+                <span class="breadcrumb-item active">Location</span>*@
+            </div>
+
+            @*<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>*@
+        </div>
+
+        <div class="header-elements d-none">
+            <div class="breadcrumb justify-content-center">
+                @*<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="icon-menu7"></i>
+                </a>*@
+
+                @*<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(833px, 39px, 0px);">
+                    <a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+                    <a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+                    <a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+                </div>*@
+            </div>
+        </div>
+    </div>
+</div>
+
